@@ -4,13 +4,13 @@ body {
     margin: 0;
     font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
     line-height: 1.5rem;
-  }
-  a {
-    color: #eeeeee;
-  }
+}
+a {
+color: #eeeeee;
+}
 
 .container{
-    background-color: #141414;
+    background-color: #000;
     /*opacity: 0.3;
     filter: alpha(opacity=30);  For IE8 and earlier */
     margin: 0 auto;
@@ -19,19 +19,40 @@ body {
     display: block;
     width: 100%;
     height: 700px;
-    border-bottom: 10px solid gray;
 }
 
 header {
     padding: 0 2.5rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
 header img {
-    width: 114px;
+    width: 164px;
     margin-top: 0;
+}
+
+.menu{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.menu ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    list-style-type: none;
+}
+.menu li {
+    font-size: 1.3rem;
+    margin: 0 1rem;
+}
+
+nav{
+    display: flex;
+    justify-content: flex-end;
 }
 
 nav ul {
@@ -81,6 +102,12 @@ nav button {
     /* margin-top: 0.5rem; */
 }
 
+main .presentacion{
+    display: block;
+    text-align: center;
+    margin-top: 130px;
+}
+
 
 footer{
     display: block;
@@ -89,22 +116,24 @@ footer{
 }
 
 footer .preguntas{
-    display: inline-block;
-    text-align: center;
+    display: block;
+    text-align: left;
     height: 30px;
     padding-top: 30px;
     padding-left: 100px;
     padding-bottom: 10px;
     color: gray;
 }
+.redes-sociales{
+    display: inline;
+}
 
 footer .preguntas:hover {
     text-decoration: underline;
 }
 
-footer .languaje{
+.languaje{
     display: block;
-    padding-top: 30px;
     padding-left: 100px;
     height: 30px;
     border: 1 solid white;
@@ -163,86 +192,6 @@ footer .asides aside li:hover {
     text-decoration: underline;
 }
 
-main{
-    display: block;
-    text-align: center;
-}
-.quien{
-    margin-top: 40px;
-    
-}
-
-.quien h1{
-    display: inline-flex;
-    justify-content: center;
-    font-size: 45px;
-    line-height: normal;
-    margin: 0;
-    font-weight: normal;
-    
-}
-.browse-perfil{
-    display: block;
-}
-
-.perfiles{
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-.perfil{
-    height: 10vw;
-    width: 10vw;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    position: relative;
-    text-decoration: none;
-    background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    background-color: #333;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
-    border: none;
-    margin: 12px;
-    display: block;
-}
-
-.perfil img{
-    width: 100%;
-    height: 100%;
-    border-radius: 4px;
-    padding: 0;
-    margin:0;
-    border: 2px solid #333;
-
-}
-.perfil img:hover{
-    border: 2px solid #fff;
-}
-.perfil h4{
-    line-height: 1.2em;
-    min-height: 1.8em;
-    color: grey;
-    display: block;
-    text-align: center;
-    font-size: 1.3vw;
-    margin: 0.6em 0;
-    -o-text-overflow: ellipsis;
-    text-overflow: ellipsis;
-    overflow: hidden;
-}
-.perfil h4:hover{
-    color:#fff;
-}
-.link-listado{
-    text-decoration: none;
-}
-
 .admin-perfiles{
     margin: 2em 0 1em 0;
     font-size: 1.2vw;
@@ -252,5 +201,5 @@ main{
     letter-spacing: 2px;
     cursor: pointer;
     background-color: transparent;
-    margin-top:80px;
+    margin-left: 105px;
 }
